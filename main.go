@@ -7,29 +7,34 @@ func main() {
 }
 
 /*
-What is Docker?
+What is Kernal?
 ---------------
-- Old days loading to the ship was hectic (barrels, boxes were used)
-- Then container comes into the play - storing/load/unload.. become earlier
+- 3xThread - 2xCore => 6 Core
+- Core (Processing Unit (ALU, CU), Register Set)
 
-- Dock - (Ferighat)
-- Docker - Person who loads unloads container at dock / Longshoreman / Stevedore
-- Docker - Container loads/unloads to the ship (computer)
-- Container (OS, Software, dependency....)
-- Image - Container screenshot
-- Can give/distribute this image to another one
-	- run using docker in another PC
-	- That imgae will create another identical container
+- OS installs to HD
+- Run the computer - loads OS code to RAM
+- Now OS takes access to everything (RAM, HD, CPU...Hardware..)
 
-=> Docker is a platform
+- Core part/Brain of OS is Kernal
+- Kernal Space: Where OS runs
+- User Space: Where other applications run
+- CPU has 2 mode as well based on what it's running right now (kernel mode, user mode)
 
-	PC1						 PC2
-Python - 1.2			Python - 3.1
-- Application			- Not working here
+- When process that is running of user space, needs anything like file acces...
+	-> process cannot access it directly
+	-> CPU currently on user modem as it's runnig a process other that Kernal
+	-> CPU on user modem cannnot access any file/hardwre directly
+	-> Process will system call to Kernal
+	-> this created privacy/security like one process cannot access other process's file
 
-=> Solomon Hykes - dotcloud - docker inc
-- Created internal tool - Docker
+- Kernal
+	- Process management (process/thread scheduling..)
+	- Memomy management (allocate/free memory)
+	- Device management (NIC connection, hardware driver..)
+	- File system management
+	- system call
+	- etc....
 
-
-Youtube: https://www.youtube.com/watch?v=I62nYMQyz48&list=PLpCqPSEm2Xe8dVi8cCLM9jmRp-FtEIGil&index=5
+Youtube: https://www.youtube.com/watch?v=qhQ_4-o2kJQ&list=PLpCqPSEm2Xe8dVi8cCLM9jmRp-FtEIGil&index=9
 */
