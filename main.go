@@ -7,34 +7,24 @@ func main() {
 }
 
 /*
-What is Kernal?
+VIRTUAL MACHINE?
 ---------------
-- 3xThread - 2xCore => 6 Core
-- Core (Processing Unit (ALU, CU), Register Set)
+- 6xVCPU - 6 Core
+- 6 Process can run parallely
+- install Hypervisor - HP process will create
+	-> can create Virtual Machine (Virtual CPU, RAM, HD, NIC...)
+	-> can virtualize physical hardware
+	-> Then map between physical (host) and virtual
+	-> got virtual computer
+		- so we can install an OS (guest OS) in here
 
-- OS installs to HD
-- Run the computer - loads OS code to RAM
-- Now OS takes access to everything (RAM, HD, CPU...Hardware..)
+- 6 Core, RAM: 10GB, HD: 100GB
+- VM1: 4 Core, RAM: 4GB, HD: 50GB
+- VM3: 4 Core, RAM: 4GB, HD: 50GB
+- VM3: 4 Core, RAM: 4GB, HD: 50GB
+-> 12 Core!! Physical 6 core will be divided
+-> 16 GB - will be divided -  Balloing technique
+=> One VM does not know about another VM
 
-- Core part/Brain of OS is Kernal
-- Kernal Space: Where OS runs
-- User Space: Where other applications run
-- CPU has 2 mode as well based on what it's running right now (kernel mode, user mode)
-
-- When process that is running of user space, needs anything like file acces...
-	-> process cannot access it directly
-	-> CPU currently on user modem as it's runnig a process other that Kernal
-	-> CPU on user modem cannnot access any file/hardwre directly
-	-> Process will system call to Kernal
-	-> this created privacy/security like one process cannot access other process's file
-
-- Kernal
-	- Process management (process/thread scheduling..)
-	- Memomy management (allocate/free memory)
-	- Device management (NIC connection, hardware driver..)
-	- File system management
-	- system call
-	- etc....
-
-Youtube: https://www.youtube.com/watch?v=qhQ_4-o2kJQ&list=PLpCqPSEm2Xe8dVi8cCLM9jmRp-FtEIGil&index=9
+Youtube: https://www.youtube.com/watch?v=5YNAGk6zSag&list=PLpCqPSEm2Xe8dVi8cCLM9jmRp-FtEIGil&index=10
 */

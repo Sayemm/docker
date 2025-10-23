@@ -10,6 +10,7 @@ This repository documents my hands-on learning journey with Docker — each comm
 - Go through the commits **one by one** to understand how Docker works
     - What is Docker?
     - What is Kernal?
+    - Virtual Machine.
 
 ## Learning Resource
 
