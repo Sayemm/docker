@@ -11,8 +11,9 @@ This repository documents my hands-on learning journey with Docker — each comm
     - What is Docker?
     - What is Kernal?
     - Virtual Machine
-    - Container (Namespace-What, Cgroup-How Much)
-    - Virtual Machine Vs Container
+    - Container (Namespace-What to use, Cgroup-How Much use)
+    - Container vs Virtual Machine(Host Machine Kernel Share or Not)
+    - Docker Engine - Creates container using host machine kernel
 
 ## Learning Resource
 

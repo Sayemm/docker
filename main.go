@@ -7,21 +7,55 @@ func main() {
 }
 
 /*
-VM vs CONTAINER
-===============
-- VM does not share Kernel
-- VM has it's own OS ie. Kernel
+DOCKER ENGINE
+=============
+1. Create Container
+2. delete Container
+3. stop Container
+4. clean Container
+5. build image
 
-- Container usees the Kernel of host OS
+parts / components of docker engine
+-----------------------------------
+1. dockerd - docker daemon
+2. container runtime
+	- containerd - high level container runtime
+	- runc - low level container runtime
 
-how docker is related?
-----------------------
-- most important part of docker is docker engine
-- docker enginer can create a Container using computers Kernel
-- separate namespace,.. for each container
+daemon - type of gurdian (perform good deeds-silently-invisibly)
+	1. background process (when we don't delete/not stuck like go server(terminal session dhore rakhe))
+	2. Listerns for requests
+	3. Serve services to other process
+	- starts when computer starts
 
-- for windows/mac - docker desktop installs a mini/lightweight VM and mini basic linux in that VM
+container runtime
+	- which creates/delete/stop/clear container
+	- works with container
 
+	containerd
+	----------
+	- manage container lifecycle (start, end)
+	- manage container storage
+	- manage image
+	- provide API so that dockerd can comuunicate with containerd
 
-Youtube: https://www.youtube.com/watch?v=HWt2IXk59aw&list=PLpCqPSEm2Xe8dVi8cCLM9jmRp-FtEIGil&index=12
+	runc
+	----
+	- create - namespace, cgroup create
+	- delete - - namespace, cgroup create delete
+	- stop, clean container
+
+when we tell docker enginer to create a container
+------
+- dockerd accepts the request
+- order containerd to take the request
+- containderd use runc to create container
+- runc requests kernel to create namespace, cgroup etc
+
+install 2 things
+----------------
+- docker engine
+- docker CLI/Client
+
+Youtube: https://www.youtube.com/watch?v=BjwoCFwooJU&list=PLpCqPSEm2Xe8dVi8cCLM9jmRp-FtEIGil&index=13
 */
