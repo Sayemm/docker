@@ -7,55 +7,25 @@ func main() {
 }
 
 /*
-DOCKER ENGINE
-=============
-1. Create Container
-2. delete Container
-3. stop Container
-4. clean Container
-5. build image
+DOCKER ECOSYSTEM
+================
+- docker -> it's a platform or ecosystem - not a tools/application
+- ecosysmtem - chain / multiple things are working together
 
-parts / components of docker engine
------------------------------------
-1. dockerd - docker daemon
-2. container runtime
-	- containerd - high level container runtime
-	- runc - low level container runtime
-
-daemon - type of gurdian (perform good deeds-silently-invisibly)
-	1. background process (when we don't delete/not stuck like go server(terminal session dhore rakhe))
-	2. Listerns for requests
-	3. Serve services to other process
-	- starts when computer starts
-
-container runtime
-	- which creates/delete/stop/clear container
-	- works with container
-
-	containerd
-	----------
-	- manage container lifecycle (start, end)
-	- manage container storage
-	- manage image
-	- provide API so that dockerd can comuunicate with containerd
-
-	runc
-	----
-	- create - namespace, cgroup create
-	- delete - - namespace, cgroup create delete
-	- stop, clean container
-
-when we tell docker enginer to create a container
-------
-- dockerd accepts the request
-- order containerd to take the request
-- containderd use runc to create container
-- runc requests kernel to create namespace, cgroup etc
-
-install 2 things
-----------------
+- docker cli
 - docker engine
-- docker CLI/Client
+- docker desktop (Linux VM)
+- docker images (screenshot of container)
+- docker Hub (website/database where images are being stored)
+- docker Compose
 
-Youtube: https://www.youtube.com/watch?v=BjwoCFwooJU&list=PLpCqPSEm2Xe8dVi8cCLM9jmRp-FtEIGil&index=13
+* docker run hello-world (image)
+- docker cli/client receives this command
+- sends this to docker engine
+	- dockerd -> containerd (cache?) -> docker Hub
+	- then containerd tells runc to convert hello-world image to a container
+	- runc communicates with Kernel with create a separate namespace
+
+
+Youtube: https://www.youtube.com/watch?v=lDklV7p3h8U&list=PLpCqPSEm2Xe8dVi8cCLM9jmRp-FtEIGil&index=14
 */
