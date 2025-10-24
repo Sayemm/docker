@@ -11,6 +11,7 @@ This repository documents my hands-on learning journey with Docker — each comm
     - What is Docker?
     - What is Kernal?
     - Virtual Machine.
+    - Container (Namespace, Cgroup)
 
 ## Learning Resource
 
