@@ -10,8 +10,9 @@ This repository documents my hands-on learning journey with Docker — each comm
 - Go through the commits **one by one** to understand how Docker works
     - What is Docker?
     - What is Kernal?
-    - Virtual Machine.
-    - Container (Namespace, Cgroup)
+    - Virtual Machine
+    - Container (Namespace-What, Cgroup-How Much)
+    - Virtual Machine Vs Container
 
 ## Learning Resource
 
