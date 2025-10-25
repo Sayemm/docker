@@ -15,6 +15,7 @@ This repository documents my hands-on learning journey with Docker — each comm
     - Container vs Virtual Machine(Host Machine Kernel Share or Not)
     - Docker Engine - Creates container using host machine kernel
     - Docker Eco System
+    - Linux (Kernel not OS)
 
 ## Learning Resource
 
