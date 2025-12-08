@@ -20,6 +20,8 @@ This repository documents my hands-on learning journey with Docker — each comm
     - GNU Utilities (Commands)
     - Desktop Environment (GNOME) (UI - What we see on OS)
 
+    - Running Ubuntu on Docker
+
 ## Learning Resource
 
 **YouTube Tutorial Playlist:**  
