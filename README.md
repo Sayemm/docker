@@ -21,6 +21,7 @@ This repository documents my hands-on learning journey with Docker — each comm
     - Desktop Environment (GNOME) (UI - What we see on OS)
 
     - Running Ubuntu on Docker
+    - Package Manager in Linux
 
 ## Learning Resource
 
