@@ -23,6 +23,7 @@ This repository documents my hands-on learning journey with Docker — each comm
     - Running Ubuntu on Docker
     - Package Manager in Linux
     - Linux Basic Commands & Linux File System
+    - Managing User, Group & Permissions
 
 ## Learning Resource
 
